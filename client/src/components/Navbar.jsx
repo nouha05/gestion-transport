@@ -13,6 +13,7 @@ export default function Navbar() {
   return (
     <header style={{ display: "flex", gap: 16, alignItems: "center" }}>
       <Link to="/trajets">Trajets</Link>
+      <Link to="/stations">Stations</Link>
       {user?.role !== "chauffeur" && (
         <Link to="/mes-reservations">Mes réservations</Link>
       )}

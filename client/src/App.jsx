@@ -5,6 +5,7 @@ import Trajets from "./pages/Trajets";
 import MesReservations from "./pages/MesReservations";
 import Chauffeur from "./pages/Chauffeur";
 import Admin from "./pages/Admin";
+import Stations from "./pages/Stations";
 import RequireAuth from "./components/RequireAuth";
 
 export default function App() {
@@ -16,6 +17,10 @@ export default function App() {
         <Route
           path="/trajets"
           element={<RequireAuth><Trajets /></RequireAuth>}
+        />
+        <Route
+          path="/stations"
+          element={<RequireAuth><Stations /></RequireAuth>}
         />
         <Route
           path="/mes-reservations"
